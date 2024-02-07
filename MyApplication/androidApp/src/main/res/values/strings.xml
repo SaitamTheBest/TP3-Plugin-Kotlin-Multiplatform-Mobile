@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TP2_Android</string>
+    <string name="page_title">Bienvenue</string>
+    <string name="name">Saisir votre nom</string>
+    <string name="year">Saisir votre année de naissance</string>
+    <string name="submit_text">Valider</string>
+</resources>

@@ -2,12 +2,9 @@ package com.example.myapplication
 
 class Greeting {
     private val platform: Platform = getPlatform()
-    private val ageCalul : AgeCalculator = TODO();
+    private val ageCalul : AgeCalculator = AgeCalculator();
 
-    fun greet(): String {
-        return "Hello, ${platform.name}!"
-    }
-    fun getAge(age : String) : Int{
-        return ageCalul.calculateAge(age);
+    fun greet(input : String): String {
+        return "Hello " + input.split(";").first() + " vous avez " + ageCalul.calculateAge(input) + " ans !";
     }
 }

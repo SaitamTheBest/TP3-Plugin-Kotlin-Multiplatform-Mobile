@@ -23,9 +23,8 @@ class NextActivity : AppCompatActivity() {
             }
             else {
                 if (year != null) {
-                    val age = Greeting.getAge(year)
                     findViewById<TextView>(R.id.main_text).text =
-                        "Hello " + name + " vous avez " + age + " ans !"
+                        Greeting().greet(name+";"+year)
                 }
             }
         }
